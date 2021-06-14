@@ -1,0 +1,22 @@
+resource_group = "vmr_rg"
+location = "southeastasia"
+cluster_name = "vmr-cluster"
+address_spaces = ["192.168.1.0/24"]
+subnet_prefix = "192.168.1.0/24"
+storage_account_tier = "Standard"
+storage_replication_type = "LRS"
+ssh_key_name = "solace-azure-key"
+vmr_name="solace1"
+vmr_data_size=30
+storage_device="sdc"
+vmr_user="admin"
+vmr_password="Change-to-your-password"
+vmr_vm_size="Standard_B2s"
+admin_username = "sysadmin"
+vmr_ha=false
+os_image = {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+}
