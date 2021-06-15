@@ -6,7 +6,7 @@ data "template_file" "compose_file" {
     container_name = "${var.vmr_name}-${count.index}"
     vmr_user = var.vmr_user
     vmr_password = var.vmr_password
-    max_connection = var.vmr_ha ? 1000 : 100
+    max_connection = 100
   }
 }
 resource "null_resource" "install_vmr" {
